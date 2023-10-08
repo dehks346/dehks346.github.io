@@ -19,6 +19,11 @@ h1{
     -webkit-background-clip: text;
     color: transparent;
 }
+h2{
+    font-size: calc(16px + 3.5vw);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
 p{
     font-size: calc(12px + 1vw);
     color: white;
@@ -152,4 +157,46 @@ p{
 }
 .third span:hover{
     color: rgb(56, 56, 255);
+}
+
+
+/* blog */
+
+
+.blog{
+    background: url(images/d.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+.blog-layout{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+.blog-post{
+    height: 20%;
+    max-height: 200px;
+    width: 40%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    background-color: aliceblue;
+    font-size: 18px; 
+}
+.blog-post:hover{
+    background-color: white;
+    transition: 0.3s;
+    height: calc(20% + 15px);
+    width: calc(40% + 30px);
+    max-width: 430px;
+    max-height: 215px;
+}
+.layer2{
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
